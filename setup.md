@@ -22,6 +22,7 @@ Poetryで `poetry.lock` に定義した依存関係をインストールしつ�
 1. `poetry config virtualenvs.in-project true` でプロジェクト内に仮想環境を作成する
 2. `poetry install` で依存関係をインストールする
 3. `poetry shell` で仮想環境に入る
+<!-- 4. `poetry env use 3.12` -->
 
 ## 環境変数の設定
 

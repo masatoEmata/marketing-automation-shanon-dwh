@@ -6,7 +6,7 @@ shanon_dbt_worker:
       method: oauth
       project: "{{ env_var('OUTPUT_PROJECT') }}"
       dataset: "{{ env_var('OUTPUT_DATASET') }}"
-      threads: 1
+      threads: 4
       timeout_seconds: 300
       location: "{{ env_var('OUTPUT_LOCATION') }}"
       priority: interactive
