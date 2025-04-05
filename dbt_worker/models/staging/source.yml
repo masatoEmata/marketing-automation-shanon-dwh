@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw__shanon_customer_info
+    schema: raw__shanon_customer_info
+    tables:
+      - name: raw__shanon_enquete_template
+        columns:
+          - name: Id
+            data_type: STRING
+          - name: Name
+            data_type: STRING
+          - name: Memo
+            data_type: STRING
+          - name: DateRegist
+            data_type: TIMESTAMP
+          - name: DateUpdate
+            data_type: TIMESTAMP
+      - name: raw__shanon_enquete_template_attribute
+        columns:
+          - name: Id
+            data_type: STRING
+          - name: Name
+            data_type: STRING
+          - name: Memo
+            data_type: STRING
+          - name: EnqueteTemplateId
+            data_type: STRING
+          - name: EnqueteTemplateName
+            data_type: STRING
+          - name: AttributeId
+            data_type: STRING
+          - name: ItemList
+            data_type: STRING

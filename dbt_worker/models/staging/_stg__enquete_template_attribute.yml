@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: stg__enquete_template_attribute
+    columns:
+      - name: enquete_template_attribute_id
+        data_type: STRING
+      - name: enquete_template_attribute_name
+        data_type: STRING
+      - name: enquete_template_attribute_option_list
+        data_type: STRING
+      - name: enquete_template_id
+        data_type: STRING
+      - name: enquete_template_name
+        data_type: STRING
