@@ -1,4 +1,4 @@
-dbt_worker:
+shanon_dbt_worker:
   target: prod
   outputs:
     prod:
@@ -6,7 +6,8 @@ dbt_worker:
       method: oauth
       project: "{{ env_var('OUTPUT_PROJECT') }}"
       dataset: "{{ env_var('OUTPUT_DATASET') }}"
-      threads: 4
+      threads: 1
       timeout_seconds: 300
       location: "{{ env_var('OUTPUT_LOCATION') }}"
       priority: interactive
+      retries: 1
