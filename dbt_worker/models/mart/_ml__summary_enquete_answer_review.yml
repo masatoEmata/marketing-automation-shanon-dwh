@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: ml__summary_enquete_answer_review
+    columns:
+      - name: enquete_template_name
+        data_type: STRING
+      - name: gemini_summary
+        data_type: STRING
+      - name: safety_ratings
+        data_type: JSON
+      - name: generation_status
+        data_type: STRING

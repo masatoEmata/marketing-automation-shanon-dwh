@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: obt__shanon_enquete_answer_detail
+    columns:
+      - name: enquete_answer_id
+        data_type: STRING
+      - name: lead_id
+        data_type: STRING
+      - name: enquete_history_id
+        data_type: STRING
+      - name: enquete_template_name
+        data_type: STRING
+      - name: enquete_template_attribute_name
+        data_type: STRING
+      - name: enquete_template_attribute_option_list
+        data_type: STRING
+      - name: enquete_answer_attribute_value
+        data_type: STRING
+      - name: enquete_history_memo
+        data_type: STRING
+      - name: latest_flag
+        data_type: INT64
+      - name: date_answer
+        data_type: STRING
