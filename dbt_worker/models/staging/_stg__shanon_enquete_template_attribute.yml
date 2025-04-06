@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: stg__enquete_template_attribute
+  - name: stg__shanon_enquete_template_attribute
     columns:
       - name: enquete_template_attribute_id
         data_type: STRING

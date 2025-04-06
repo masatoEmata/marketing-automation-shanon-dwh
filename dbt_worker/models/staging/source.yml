@@ -32,3 +32,347 @@ sources:
             data_type: STRING
           - name: ItemList
             data_type: STRING
+      - name: raw__shanon_enquete_history
+        columns:
+          - name: Id
+            data_type: STRING
+          - name: EnqueteTemplateId
+            data_type: STRING
+          - name: EnqueteTemplateName
+            data_type: STRING
+          - name: EnquetePlace2Id
+            data_type: STRING
+          - name: EnquetePlace2Name
+            data_type: STRING
+          - name: ApplicationFlowId
+            data_type: STRING
+          - name: ApplicationFlowName
+            data_type: STRING
+          - name: Name
+            data_type: STRING
+          - name: Memo
+            data_type: STRING
+          - name: EnqueteStatusId
+            data_type: STRING
+          - name: EnqueteStatusName
+            data_type: STRING
+          - name: StartDay
+            data_type: TIMESTAMP
+          - name: EndDay
+            data_type: TIMESTAMP
+          - name: DateRegist
+            data_type: TIMESTAMP
+          - name: DateUpdate
+            data_type: TIMESTAMP
+      - name: raw__shanon_enquete_answer
+        columns:
+          - name: Id
+            data_type: STRING
+          - name: VisitorId
+            data_type: STRING
+          - name: HistoryId
+            data_type: STRING
+          - name: DataId
+            data_type: STRING
+          - name: LatestFlag
+            data_type: INT64
+          - name: DateAnswer
+            data_type: STRING
+          - name: DateRegist
+            data_type: TIMESTAMP
+          - name: DateUpdate
+            data_type: TIMESTAMP
+          - name: Attribute1
+            data_type: STRING
+          - name: Attribute1List
+            data_type: STRING
+          - name: Attribute1File
+            data_type: STRING
+          - name: Attribute2
+            data_type: STRING
+          - name: Attribute2List
+            data_type: STRING
+          - name: Attribute2File
+            data_type: STRING
+          - name: Attribute3
+            data_type: STRING
+          - name: Attribute3List
+            data_type: STRING
+          - name: Attribute3File
+            data_type: STRING
+          - name: Attribute34
+            data_type: STRING
+          - name: Attribute34List
+            data_type: STRING
+          - name: Attribute34File
+            data_type: STRING
+          - name: Attribute35
+            data_type: STRING
+          - name: Attribute35List
+            data_type: STRING
+          - name: Attribute35File
+            data_type: STRING
+          - name: Attribute36
+            data_type: STRING
+          - name: Attribute36List
+            data_type: STRING
+          - name: Attribute36File
+            data_type: STRING
+          - name: Attribute37
+            data_type: STRING
+          - name: Attribute37List
+            data_type: STRING
+          - name: Attribute37File
+            data_type: STRING
+          - name: Attribute67
+            data_type: STRING
+          - name: Attribute67List
+            data_type: STRING
+          - name: Attribute67File
+            data_type: STRING
+          - name: Attribute68
+            data_type: STRING
+          - name: Attribute68List
+            data_type: STRING
+          - name: Attribute68File
+            data_type: STRING
+          - name: Attribute69
+            data_type: STRING
+          - name: Attribute69List
+            data_type: STRING
+          - name: Attribute69File
+            data_type: STRING
+          - name: Attribute100
+            data_type: STRING
+          - name: Attribute100List
+            data_type: STRING
+          - name: Attribute100File
+            data_type: STRING
+          - name: Attribute101
+            data_type: STRING
+          - name: Attribute101List
+            data_type: STRING
+          - name: Attribute101File
+            data_type: STRING
+          - name: Attribute102
+            data_type: STRING
+          - name: Attribute102List
+            data_type: STRING
+          - name: Attribute102File
+            data_type: STRING
+          - name: Attribute103
+            data_type: STRING
+          - name: Attribute103List
+            data_type: STRING
+          - name: Attribute103File
+            data_type: STRING
+          - name: Attribute133
+            data_type: STRING
+          - name: Attribute133List
+            data_type: STRING
+          - name: Attribute133File
+            data_type: STRING
+          - name: Attribute134
+            data_type: STRING
+          - name: Attribute134List
+            data_type: STRING
+          - name: Attribute134File
+            data_type: STRING
+          - name: Attribute135
+            data_type: STRING
+          - name: Attribute135List
+            data_type: STRING
+          - name: Attribute135File
+            data_type: STRING
+          - name: Attribute136
+            data_type: STRING
+          - name: Attribute136List
+            data_type: STRING
+          - name: Attribute136File
+            data_type: STRING
+          - name: Attribute137
+            data_type: STRING
+          - name: Attribute137List
+            data_type: STRING
+          - name: Attribute137File
+            data_type: STRING
+          - name: Attribute138
+            data_type: STRING
+          - name: Attribute138List
+            data_type: STRING
+          - name: Attribute138File
+            data_type: STRING
+          - name: Attribute139
+            data_type: STRING
+          - name: Attribute139List
+            data_type: STRING
+          - name: Attribute139File
+            data_type: STRING
+          - name: Attribute140
+            data_type: STRING
+          - name: Attribute140List
+            data_type: STRING
+          - name: Attribute140File
+            data_type: STRING
+          - name: Attribute141
+            data_type: STRING
+          - name: Attribute141List
+            data_type: STRING
+          - name: Attribute141File
+            data_type: STRING
+          - name: Attribute142
+            data_type: STRING
+          - name: Attribute142List
+            data_type: STRING
+          - name: Attribute142File
+            data_type: STRING
+      - name: raw__shanon_lead
+        columns:
+          - name: Id
+            data_type: STRING
+          - name: DateRegist
+            data_type: TIMESTAMP
+          - name: DateUpdate
+            data_type: TIMESTAMP
+          - name: LoginId
+            data_type: STRING
+          - name: Name1
+            data_type: STRING
+          - name: Name2
+            data_type: STRING
+          - name: Name3
+            data_type: STRING
+          - name: Name1Ka
+            data_type: STRING
+          - name: Name2Ka
+            data_type: STRING
+          - name: CompanyName
+            data_type: STRING
+          - name: CompanyNameKa
+            data_type: STRING
+          - name: Division
+            data_type: STRING
+          - name: Position
+            data_type: STRING
+          - name: Zip1
+            data_type: STRING
+          - name: Zip2
+            data_type: STRING
+          - name: Zip3
+            data_type: STRING
+          - name: CountryId
+            data_type: STRING
+          - name: CountryName
+            data_type: STRING
+          - name: PrefectureId
+            data_type: STRING
+          - name: PrefectureName
+            data_type: STRING
+          - name: Address1
+            data_type: STRING
+          - name: Address2
+            data_type: STRING
+          - name: Address3
+            data_type: STRING
+          - name: Address4
+            data_type: STRING
+          - name: Address5
+            data_type: STRING
+          - name: Tel
+            data_type: STRING
+          - name: SubTel
+            data_type: STRING
+          - name: Fax
+            data_type: STRING
+          - name: Email
+            data_type: STRING
+          - name: EmailValidId
+            data_type: STRING
+          - name: EmailValidName
+            data_type: STRING
+          - name: EmailSendErrorCount
+            data_type: INT64
+          - name: EmailValidDateUpdate
+            data_type: TIMESTAMP
+          - name: SubEmail
+            data_type: STRING
+          - name: SubEmailValidId
+            data_type: STRING
+          - name: SubEmailValidName
+            data_type: STRING
+          - name: SubEmailSendErrorCount
+            data_type: INT64
+          - name: SubEmailValidDateUpdate
+            data_type: TIMESTAMP
+          - name: PermissionTypeId
+            data_type: STRING
+          - name: PermissionTypeName
+            data_type: STRING
+          - name: InspectionTypeId
+            data_type: STRING
+          - name: InspectionTypeName
+            data_type: STRING
+          - name: RegistrationTypeId
+            data_type: STRING
+          - name: RegistrationTypeName
+            data_type: STRING
+          - name: LanguageId
+            data_type: STRING
+          - name: LanguageName
+            data_type: STRING
+          - name: Memo
+            data_type: STRING
+          - name: UserId
+            data_type: STRING
+          - name: MembershipId
+            data_type: STRING
+          - name: MembershipName
+            data_type: STRING
+          - name: UnsubscribeStatus
+            data_type: STRING
+          - name: UnsubscribeDate
+            data_type: TIMESTAMP
+          - name: Attribute1
+            data_type: STRING
+          - name: Attribute35
+            data_type: STRING
+          - name: Attribute36
+            data_type: STRING
+          - name: Attribute37
+            data_type: STRING
+          - name: Attribute67
+            data_type: STRING
+          - name: Attribute68
+            data_type: STRING
+          - name: Attribute69
+            data_type: STRING
+          - name: Attribute70
+            data_type: STRING
+          - name: Attribute72
+            data_type: STRING
+          - name: Attribute73
+            data_type: STRING
+          - name: Attribute74
+            data_type: STRING
+          - name: Attribute100
+            data_type: STRING
+          - name: Attribute133
+            data_type: STRING
+          - name: Attribute134
+            data_type: STRING
+          - name: Attribute135
+            data_type: STRING
+          - name: Attribute166
+            data_type: STRING
+          - name: Attribute199
+            data_type: STRING
+          - name: Attribute232
+            data_type: STRING
+          - name: Attribute265
+            data_type: STRING
+          - name: Attribute266
+            data_type: STRING
+          - name: Attribute298
+            data_type: STRING
+          - name: load_timestamp
+            data_type: TIMESTAMP

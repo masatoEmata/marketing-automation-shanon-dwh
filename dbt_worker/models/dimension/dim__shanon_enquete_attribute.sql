@@ -8,7 +8,7 @@ load_enquete_template_attribute as (
         , enquete_template_id
         , enquete_template_name
     from
-        {{ ref('stg__enquete_template_attribute') }}
+        {{ ref('stg__shanon_enquete_template_attribute') }}
 )
 
 -- 2. Enquete Template
@@ -17,10 +17,10 @@ load_enquete_template_attribute as (
         enquete_template_id
         , enquete_template_name
         , enquete_template_memo
-        , created_at
-        , updated_at
+        , date_regist
+        , date_update
     from
-        {{ ref('stg__enquete_template') }}
+        {{ ref('stg__shanon_enquete_template') }}
 )
 
 -- 3. Join Enquete Template and Enquete Template Attribute
@@ -32,8 +32,8 @@ load_enquete_template_attribute as (
         , enq_attribute.enquete_template_id
         , enq_template.enquete_template_name
         , enq_template.enquete_template_memo
-        , enq_template.created_at
-        , enq_template.updated_at
+        , enq_template.date_regist
+        , enq_template.date_update
     from
         load_enquete_template_attribute as enq_attribute
     left outer join
@@ -50,8 +50,8 @@ load_enquete_template_attribute as (
         , enquete_template_id
         , enquete_template_name
         , enquete_template_memo
-        , created_at
-        , updated_at
+        , date_regist
+        , date_update
     from
         load_enquete_template_attribute_join
 )

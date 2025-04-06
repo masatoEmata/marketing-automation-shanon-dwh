@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: fct__shanon_enquete_answer
+    columns:
+      - name: enquete_answer_id
+        data_type: STRING
+      - name: lead_id
+        data_type: STRING
+      - name: enquete_history_id
+        data_type: STRING
+      - name: data_id
+        data_type: STRING
+      - name: enquete_template_attribute_id
+        data_type: STRING
+      - name: enquete_answer_attribute_value
+        data_type: STRING
+      - name: latest_flag
+        data_type: INT64
+      - name: date_answer
+        data_type: STRING
+      - name: date_regist
+        data_type: TIMESTAMP
+      - name: date_update
+        data_type: TIMESTAMP

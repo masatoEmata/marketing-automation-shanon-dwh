@@ -1,0 +1,152 @@
+version: 2
+models:
+  - name: stg__shanon_lead
+    columns:
+      - name: lead_id
+        data_type: STRING
+      - name: lead_login_id
+        data_type: STRING
+      - name: lead_name1
+        data_type: STRING
+      - name: lead_name2
+        data_type: STRING
+      - name: lead_name3
+        data_type: STRING
+      - name: lead_name1_ka
+        data_type: STRING
+      - name: lead_name2_ka
+        data_type: STRING
+      - name: lead_company_name
+        data_type: STRING
+      - name: lead_company_name_ka
+        data_type: STRING
+      - name: lead_division
+        data_type: STRING
+      - name: lead_position
+        data_type: STRING
+      - name: lead_zip1
+        data_type: STRING
+      - name: lead_zip2
+        data_type: STRING
+      - name: lead_zip3
+        data_type: STRING
+      - name: lead_country_id
+        data_type: STRING
+      - name: lead_country_name
+        data_type: STRING
+      - name: lead_prefecture_id
+        data_type: STRING
+      - name: lead_prefecture_name
+        data_type: STRING
+      - name: lead_address1
+        data_type: STRING
+      - name: lead_address2
+        data_type: STRING
+      - name: lead_address3
+        data_type: STRING
+      - name: lead_address4
+        data_type: STRING
+      - name: lead_address5
+        data_type: STRING
+      - name: lead_tel
+        data_type: STRING
+      - name: lead_sub_tel
+        data_type: STRING
+      - name: lead_fax
+        data_type: STRING
+      - name: lead_email
+        data_type: STRING
+      - name: lead_email_valid_id
+        data_type: STRING
+      - name: lead_email_valid_name
+        data_type: STRING
+      - name: lead_email_send_error_count
+        data_type: INT64
+      - name: lead_email_valid_date_update
+        data_type: TIMESTAMP
+      - name: lead_sub_email
+        data_type: STRING
+      - name: lead_sub_email_valid_id
+        data_type: STRING
+      - name: lead_sub_email_valid_name
+        data_type: STRING
+      - name: lead_sub_email_send_error_count
+        data_type: INT64
+      - name: lead_sub_email_valid_date_update
+        data_type: TIMESTAMP
+      - name: lead_permission_type_id
+        data_type: STRING
+      - name: lead_permission_type_name
+        data_type: STRING
+      - name: lead_inspection_type_id
+        data_type: STRING
+      - name: lead_inspection_type_name
+        data_type: STRING
+      - name: lead_registration_type_id
+        data_type: STRING
+      - name: lead_registration_type_name
+        data_type: STRING
+      - name: lead_language_id
+        data_type: STRING
+      - name: lead_language_name
+        data_type: STRING
+      - name: lead_memo
+        data_type: STRING
+      - name: lead_user_id
+        data_type: STRING
+      - name: lead_membership_id
+        data_type: STRING
+      - name: lead_membership_name
+        data_type: STRING
+      - name: lead_unsubscribe_status
+        data_type: STRING
+      - name: lead_unsubscribe_date
+        data_type: TIMESTAMP
+      - name: lead_attribute1
+        data_type: STRING
+      - name: lead_attribute35
+        data_type: STRING
+      - name: lead_attribute36
+        data_type: STRING
+      - name: lead_attribute37
+        data_type: STRING
+      - name: lead_attribute67
+        data_type: STRING
+      - name: lead_attribute68
+        data_type: STRING
+      - name: lead_attribute69
+        data_type: STRING
+      - name: lead_attribute70
+        data_type: STRING
+      - name: lead_attribute72
+        data_type: STRING
+      - name: lead_attribute73
+        data_type: STRING
+      - name: lead_attribute74
+        data_type: STRING
+      - name: lead_attribute100
+        data_type: STRING
+      - name: lead_attribute133
+        data_type: STRING
+      - name: lead_attribute134
+        data_type: STRING
+      - name: lead_attribute135
+        data_type: STRING
+      - name: lead_attribute166
+        data_type: STRING
+      - name: lead_attribute199
+        data_type: STRING
+      - name: lead_attribute232
+        data_type: STRING
+      - name: lead_attribute265
+        data_type: STRING
+      - name: lead_attribute266
+        data_type: STRING
+      - name: lead_attribute298
+        data_type: STRING
+      - name: date_regist
+        data_type: TIMESTAMP
+      - name: date_update
+        data_type: TIMESTAMP
+      - name: load_timestamp
+        data_type: TIMESTAMP

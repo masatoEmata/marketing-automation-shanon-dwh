@@ -10,8 +10,7 @@ load_enquete_template_attribute as (
         {{ source('raw__shanon_customer_info', 'raw__shanon_enquete_template_attribute') }}
     where
         Name not like '%テスト%'
-        or Name not like '%test%'
-        or Name not like '%TEST%'
+        or lower(Name) not like '%test%'
 )
 
 , final as (

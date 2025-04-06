@@ -1,0 +1,26 @@
+version: 2
+models:
+  - name: stg__shanon_enquete_history
+    columns:
+      - name: enquete_history_id
+        data_type: STRING
+      - name: enquete_template_id
+        data_type: STRING
+      - name: enquete_template_name
+        data_type: STRING
+      - name: enquete_place2_id
+        data_type: STRING
+      - name: application_flow_id
+        data_type: STRING
+      - name: application_flow_name
+        data_type: STRING
+      - name: enquete_history_name
+        data_type: STRING
+      - name: enquete_history_memo
+        data_type: STRING
+      - name: enquete_history_status_name
+        data_type: STRING
+      - name: enquete_history_start_date
+        data_type: TIMESTAMP
+      - name: enquete_history_end_date
+        data_type: TIMESTAMP

@@ -4,14 +4,13 @@ load_enquete_template as (
         Id as enquete_template_id
         , Name as enquete_template_name
         , Memo as enquete_template_memo
-        , DateRegist as created_at
-        , DateUpdate as updated_at
+        , DateRegist as date_regist
+        , DateUpdate as date_update
     from
         {{ source('raw__shanon_customer_info', 'raw__shanon_enquete_template') }}
     where
         Name not like '%テスト%'
-        or Name not like '%test%'
-        or Name not like '%TEST%'
+        or lower(Name) not like '%test%'
 )
 
 , final as (
@@ -19,8 +18,8 @@ load_enquete_template as (
         enquete_template_id
         , enquete_template_name
         , enquete_template_memo
-        , created_at
-        , updated_at
+        , date_regist
+        , date_update
     from
         load_enquete_template
 )

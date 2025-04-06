@@ -14,7 +14,7 @@ models:
         data_type: STRING
       - name: enquete_template_memo
         data_type: STRING
-      - name: created_at
+      - name: date_regist
         data_type: TIMESTAMP
-      - name: updated_at
+      - name: date_update
         data_type: TIMESTAMP
