@@ -126,26 +126,7 @@ load_enquete_answer as (
         , ml_result.ml_generate_text_status as generation_status
     from
         ml.generate_text(
-            /*
-            事前準備
-            1. 接続を作成しておく。
-                `bq mk --connection --location=asia-northeast1 --project_id=<YOUR_PROJECT_ID> --connection_type=CLOUD_RESOURCE gemini-connection`
-            2. geminiのサービスアカウントに権限を付与しておく。
-                ```
-                gcloud projects add-iam-policy-binding <YOUR_PROJECT_ID> \
-                    --member="serviceAccount:bqcx-....iam.gserviceaccount.com" \  # これを付与しないとエラーになるgeminiのサービスアカウント IAM参照
-                    --role="roles/aiplatform.user"
-                ```
-            3. geminiのモデルを作成しておく。
-                ```sql
-                CREATE OR REPLACE MODEL `<YOUR_PROJECT_ID>.dwh__shanon_customer_info_mart.gemini_pro_model`
-                REMOTE WITH CONNECTION `<YOUR_PROJECT_ID>.asia-northeast1.gemini-connection`
-                OPTIONS (
-                    remote_service_type = 'CLOUD_AI_LARGE_LANGUAGE_MODEL_V1',
-                    endpoint = 'gemini-1.0-pro' -- 使用したいGeminiモデル名
-                );
-                ```
-            */
+            -- 事前準備: gemini_pro_model を作成しておく必要がある。mdファイル参照。
             model `{{ var('OUTPUT_PROJECT') }}.{{ var('OUTPUT_DATASET') }}_mart.gemini_pro_model`
             , (select * from prompt_generation)
             , struct(
